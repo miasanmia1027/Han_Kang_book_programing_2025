@@ -39,7 +39,7 @@ def rawdata_to_cleandata(data_file_path):
     return 
 #----------------------------------------------------------------
 def txt_to_pkl_tokens(data_file):
-    with open(f'{data_file}', "r", encoding="utf-8") as f:
+    with open(f'{data_file}.txt', "r", encoding="utf-8") as f:
         book = f.readlines()
 
     okt = Okt()
@@ -114,12 +114,12 @@ def pkl_token_to_vectoredata(file_path,name):
     similarity_df.to_csv(f"no_han_book/{name}_similer.csv", encoding="UTF-8")
     return 
 #----------------------------------------------------------------
+
+
+
+
+
+
+
+
 #----------------------------------------------------------------
-#----------------------------------------------------------------
-
-
-
-
-
-
-
